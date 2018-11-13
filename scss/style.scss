@@ -31,13 +31,23 @@ body {
 	border-radius: 25px;
 	text-align: center;
 	&__logo{
-		transform: translate(30%, -50%);
+		transform: translate(40%, -50%);
 		position: relative;
 	}
 	&__close{
 		position: relative;
 		float: right;
 		margin: 10px;
+		background-color: transparent;
+		border: 2px solid #353a45;
+		outline: 0;
+		border-radius: 60%;
+		&:hover{
+			transform:scale(1.1);
+		}
+		img{
+			width: 30px;
+		}
 	}
 	&__name{
 		margin: 0;
@@ -69,6 +79,10 @@ body {
 		outline: none;
 		color: #fff;
 		text-transform: uppercase;
+		&:hover{
+			transform:scale(1.1);
+			transition: .2s ease-out;
+		}
 	}
 	span{
 		display: block;
